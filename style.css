@@ -1,0 +1,363 @@
+body {
+	color: #3F2013;
+	text-align: center;
+	background-color: #EEE4E1;
+	font-family: 'Nunito', sans-serif;}
+
+h1{
+	color: #B2967D;
+	line-height: 0.8;
+	font-family: 'Pacifico', cursive;
+	margin-bottom: 15px;}
+
+h3{
+	font-family: 'Pacifico', cursive;
+	line-height: 0.6}
+
+a {
+	text-decoration: none;
+	color:#905F51;}
+
+	a:hover{
+		color:#B2967D;}
+
+#yoga label{
+	margin-top: 10px;}
+
+#travel label {
+	margin-top: 0px;}
+
+
+@media (min-width: 1100px) {
+	.container{
+		width: 1000px;
+		margin: 0px auto
+	}
+	
+	#yoga .grid{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		width: 880px;
+	}
+
+	#travel{
+		width: 880px;
+		column-gap: 0px;
+		grid-template-columns: repeat(4, 1fr);
+	}
+		
+		#box-one{
+			grid-column: 1;
+			grid-row: 1/3;
+		}
+
+		#box-two{
+			grid-column: 4;
+			grid-row: 1/3;
+		}
+
+		#travel .grid{
+			grid-column: 2/4;
+			grid-row: 1/3;
+			grid-template-columns: 1fr 1fr;
+			width: 440px;
+			padding: 0px auto
+		}
+
+	.grid-pic-vertical{
+		height: 300px;
+		width:180px;
+		object-fit: cover;
+	}
+
+			.grid-pic-vertical:hover{
+				height: 320;
+				width:210px;
+			}
+
+	h1{
+		font-size: 80px;
+	}
+
+	body{
+		font-size: 20px;
+	}
+
+	label{
+		font-size: 18px;
+	}
+
+	.hobbies{
+		font-size: 16px
+	}
+	
+	h3, .hobbies h2{
+		font-size: 36px;
+	}
+	
+	.footer i{
+		font-size: 50px;
+	}
+	
+	.list-inline>li{
+		padding:30px;}
+	}
+
+@media (max-width: 1100px) {
+	.container{
+		width: 680px;
+		margin: 0px auto
+	}
+	
+	#yoga .grid{
+		grid-template-columns: 1fr 1fr;
+		width: 440px;
+	}
+
+	#travel{
+		width: 440px;
+		column-gap: 0px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+		
+		#box-one{
+			grid-column: 1;
+			grid-row: 3;
+		}
+
+		#box-two{
+			grid-column: 2;
+			grid-row: 3;
+		}
+
+		#travel .grid{
+			grid-column: 1/3;
+			grid-row: 1/3;
+			grid-template-columns: 1fr 1fr;
+			width: 440px;
+			padding: 0px auto
+		}
+
+	.grid-pic-vertical{
+		height: 250px;
+		width: 180px;
+		object-fit: cover;
+	}
+
+			.grid-pic-vertical:hover{
+				height: 270px;
+				width: 210px;
+			}
+
+	h1{
+		font-size: 70px;
+	}
+
+	body{
+		font-size: 17px;
+	}
+
+	label{
+		font-size: 15px;
+	}
+
+	.hobbies{
+		font-size: 15px
+	}
+	
+	h3, .hobbies h2{
+		font-size: 32px;
+	}
+	
+	.footer i{
+		font-size: 42px;
+	}
+	
+	.list-inline>li{
+		padding: 20px;}
+	}
+
+@media (max-width: 750px) {
+	.container{
+		width: auto;
+		margin: 0px auto
+	}
+	
+	#yoga .grid{
+		grid-template-columns: 1fr;
+		width: 210px;
+	}
+
+	#travel{
+		width: 210px;
+		grid-row-gap: 10px;
+		grid-template-columns: 1fr
+	}
+		
+		#box-one{
+			grid-column: 1;
+			grid-row: 5;
+		}
+
+		#box-two{
+			grid-column: 1;
+			grid-row: 6;
+		}
+
+		#travel .grid{
+			grid-column: 1;
+			grid-row: 1/5;
+			grid-template-columns: 1fr;
+			width: 210px;
+			padding: 0px auto;
+			margin:0px auto;
+			grid-row-gap: 10px;
+		}
+
+	.grid-pic-vertical{
+		height: 200px;
+		width: 180px;
+		object-fit: cover;
+	}
+
+			.grid-pic-vertical:hover{
+				height: 220px;
+				width: 210px;
+			}
+
+	h1{
+		font-size: 50px;
+	}
+
+	body{
+		font-size: 14px;
+	}
+
+	label{
+		font-size: 12px;
+	}
+
+	.hobbies{
+		font-size: 14px
+	}
+	
+	h3, .hobbies h2{
+		font-size: 26px;
+	}
+	
+	.footer i{
+		font-size: 36px;
+	}
+	
+	.list-inline>li{
+		padding: 15px;}
+	}
+
+
+.banner{
+	background-color: #EEE4E1;
+	padding: 30px 0px;
+}
+
+	.banner h1 {
+		padding-bottom: 20px;
+	}
+
+	.banner img {
+		height: 200px;
+		border-radius: 50%;
+		margin-bottom: 15px;
+		margin-top: 10;
+	}
+
+		.banner img:hover{
+			height: 220px;
+			margin-bottom: 5px;
+			margin-top: 0px;
+			transition: 0.5s ease;
+		}
+
+	.banner p{
+		padding: 20px 50px;
+		background-color: #ECF8F8;
+		margin: 25px 0px;
+	}
+
+.cards-shape {
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+#hobbies{
+	background-color: #E7D8C9;
+	padding: 30px 0px;
+	transition: 1.5s;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+	#hobbies h2{
+		color: #3F2013;  
+		text-align: center; 
+		line-height: 0;
+	}
+
+	.passion{
+		background-color: none;
+		border-radius: 10px;
+		padding: 10px 30px;
+		margin: 0px 30px;
+		transition: 0.3s ease;
+	}
+
+		.passion:hover{
+			background-color: #ECF8F8;
+		}
+
+	#yoga, {
+		padding-bottom: 25px;
+	}
+
+	.grid{
+		display: grid;
+		margin: 0px auto;
+	}
+
+
+	.grid-pic{
+		height: 120px;
+		width:180px;
+		transition: 0.5s ease;
+		margin: 15px;
+	}
+
+		.grid-pic:hover{
+			height: 140px;
+			width:210px;
+			margin: 5px 0px;
+			transition: 0.5s ease;
+		}
+
+	.grid-pic-vertical{
+		transition: 0.5s ease;
+		margin: 15px;
+	}
+
+		.grid-pic-vertical:hover{
+			margin: 5px 0px;
+			transition: 0.5s ease;
+		}
+
+.footer{
+	background-color: #EEE4E1;
+	padding-bottom: 80px;
+	font-size: 16px;
+}
+
+	.list-inline{
+		list-style: none;
+		padding-left: 0px;
+	}
+
+		.list-inline>li{
+			display: inline;
+		}
